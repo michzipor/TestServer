@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first DevOps project!</title>
+    <script>
+      function change_text()
+      {
+	var MyName = document.getElementById('MyName').value; 
+	document.getElementById('InnerText').innerHTML = "Hello, " + MyName + '!';
+	document.getElementById('date').innerHTML = new Date().toDateString();
+      }
+    </script>
+  </head>
+  <center><body>
+    <h1>Hello, World!</h1>
+    <h2 id="InnerText"></h2>
+    <h4 id='date'></h4>
+    My name is:  <input type="text" name="My_Name" id="MyName" value="Mickey"><br>
+    <h5></h5>
+    <input type="button" value="Submit" onclick='change_text()'>
+  </body></center>
+</html>
+
+<script async src="./javascript/index.js"></script>
+
